@@ -1,0 +1,24 @@
+CREATE TABLE games (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, instock INTEGER, price INTEGER);
+INSERT INTO games VALUES (1, "Zelda", 1, 20, 65);
+INSERT INTO games VALUES (2, "controller", 3, 45, 60);
+INSERT INTO games VALUES (3, "Batteries", 8,150, 10);
+INSERT INTO games VALUES (4, "TV", 1, 20, 450);
+INSERT INTO games VALUES (5, "nintindo", 1, 30, 250);
+INSERT INTO games VALUES (6, "airpods", 1, 32, 200);
+INSERT INTO games VALUES (7, "charger", 1, 20, 10);
+INSERT INTO games VALUES (8, "laptop", 1, 89, 200);
+INSERT INTO games VALUES (9, "phone", 1, 68, 150);
+INSERT INTO games VALUES (10, "cable", 1, 76, 6);
+INSERT INTO games VALUES (11, "remote", 1, 62, 5);
+INSERT INTO games VALUES (12, "headset", 1, 54, 30);
+INSERT INTO games VALUES (13, "mario", 1, 76, 60);
+INSERT INTO games VALUES (14, "apex", 1, 34, 5);
+INSERT INTO games VALUES (15, "wii sports", 1, 65, 60);
+
+display the database ordered by price. 
+SELECT * FROM games WHERE price ORDER BY price;
+
+
+
+
+
