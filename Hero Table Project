@@ -1,0 +1,80 @@
+CREATE table superheros (id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    power INTEGER,
+    aligment TEXT,
+    universe TEXT);
+    
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("spiderman", 58, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("superman", 59, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("captian_america", 5, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("ironman", 15, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("flash", 100, "good", "dc");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("hulk", 80, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("batman", 10, "good", "dc");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("captain_marvel", 49, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("invinceable", 56, "good", "incinceable");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("wally_west", 99, "good", "dc");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("dare_devil", 6, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("doctor_stronge", 60, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("antman", 43, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("black_window", 1, "good", "marvel");
+INSERT INTO superheros (name, power, aligment, universe)
+    VALUES ("hawkeye", 2, "good", "marvel");
+
+CREATE table supervillain (id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    power INTEGER,
+    aligment TEXT,
+    universe TEXT);
+    
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("red_hulk", 69, "evil", "marvel");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("green_goblin", 6, "evil", "dc");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("red_hood", 2, "evil", "dc");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("lex_luther", 5, "evil", "dc");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("venom", 50, "evil", "marvel");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("king_pin", 6, "evil", "marvel");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("the_joker", 3, "evil", "dc");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("the_prowler", 9, "evil", "marvel");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("electro", 23, "evil", "marvel");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("dead_pool", 80, "evil", "marvel");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("stepinwolf", 28, "evil", "dc");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("Loki", 30, "evil", "marvel");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("thanos", 90, "evil", "marvel");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("ultran", 70, "evil", "marvel");
+INSERT INTO supervillain (name, power, aligment, universe)
+    VALUES ("red_skull", 3, "evil", "marvel");
+    
+
+
+SELECT superheros.name, superheros.power, supervillain.name, supervillain.power
+FROM superheros
+JOIN supervillain
+ON superheros.id = supervillain.id;
